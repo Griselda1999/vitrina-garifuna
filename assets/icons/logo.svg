@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <circle cx="60" cy="60" r="58" stroke="#D4A017" stroke-width="3" fill="#0A1628"/>
+  <circle cx="60" cy="60" r="42" fill="#1A2744"/>
+  <path d="M60 25 L75 55 L60 48 L45 55 Z" fill="#D4A017"/>
+  <path d="M45 55 L60 95 L75 55 L60 70 Z" fill="#F0C040"/>
+  <circle cx="60" cy="55" r="8" fill="#FFFFFF"/>
+  <text x="60" y="112" text-anchor="middle" fill="#D4A017" font-family="Arial,sans-serif" font-size="8" font-weight="bold">GARINAGU</text>
+</svg>

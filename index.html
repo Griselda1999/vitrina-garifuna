@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vitrina Virtual Garífuna — Conoce, apoya y conecta con los emprendimientos del pueblo Garífuna de Honduras.">
+  <title>Vitrina Virtual Garífuna | Centro de la Cultura Garífuna de Honduras</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="header-brand" data-scroll="#inicio">
+        <img src="assets/icons/logo.svg" alt="Logo GARINAGU" class="header-logo">
+        <div class="header-brand-text">
+          <span class="header-brand-name">GARINAGU</span>
+          <span class="header-brand-sub">Centro de la Cultura Garífuna de Honduras</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <a href="#" class="nav-link active" data-scroll="#inicio">Inicio</a>
+        <a href="#" class="nav-link" data-placeholder="La sección ¿Quiénes Somos? estará disponible próximamente.">¿Quiénes Somos?</a>
+        <a href="#" class="nav-link" data-placeholder="La Biblioteca estará disponible próximamente.">Biblioteca</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link nav-dropdown-toggle active">
+            Vitrina Virtual <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="#" class="nav-dropdown-item" data-scroll="#inicio">Presentación</a>
+            <a href="#" class="nav-dropdown-item" data-scroll="#emprendedores">Explorar emprendedores</a>
+            <a href="#" class="nav-dropdown-item" data-scroll="#categorias">Categorías</a>
+            <a href="#" class="nav-dropdown-item" data-scroll="#destacados">Emprendedores destacados</a>
+          </div>
+        </div>
+        <a href="#" class="nav-link" data-placeholder="La Galería estará disponible próximamente.">Galería</a>
+        <a href="#" class="nav-link" data-placeholder="Multimedia estará disponible próximamente.">Multimedia</a>
+        <a href="#" class="nav-link" data-placeholder="El Blog estará disponible próximamente.">Blog</a>
+        <a href="#" class="nav-link" data-placeholder="Contáctanos estará disponible próximamente.">Contáctanos</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="header-user" id="headerUser" aria-label="Usuario">
+          <i class="fa-solid fa-user"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="nav-mobile" id="navMobile" aria-label="Menú móvil">
+    <a href="#" class="nav-mobile-link" data-scroll="#inicio">Inicio</a>
+    <a href="#" class="nav-mobile-link" data-placeholder="La sección ¿Quiénes Somos? estará disponible próximamente.">¿Quiénes Somos?</a>
+    <a href="#" class="nav-mobile-link" data-placeholder="La Biblioteca estará disponible próximamente.">Biblioteca</a>
+    <a href="#" class="nav-mobile-link" data-scroll="#inicio">Vitrina Virtual</a>
+    <div class="nav-mobile-sub">
+      <a href="#" class="nav-mobile-link" data-scroll="#emprendedores">Explorar emprendedores</a>
+      <a href="#" class="nav-mobile-link" data-scroll="#categorias">Categorías</a>
+      <a href="#" class="nav-mobile-link" data-scroll="#destacados">Emprendedores destacados</a>
+    </div>
+    <a href="#" class="nav-mobile-link" data-placeholder="La Galería estará disponible próximamente.">Galería</a>
+    <a href="#" class="nav-mobile-link" data-placeholder="Multimedia estará disponible próximamente.">Multimedia</a>
+    <a href="#" class="nav-mobile-link" data-placeholder="El Blog estará disponible próximamente.">Blog</a>
+    <a href="#" class="nav-mobile-link" data-placeholder="Contáctanos estará disponible próximamente.">Contáctanos</a>
+    <a href="#" class="nav-mobile-link" data-scroll="#registro">Registro de emprendedores</a>
+  </nav>
+
+  <!-- ========== PROFILE VIEW ========== -->
+  <div class="profile-view" id="profileView">
+    <div id="profileContent"></div>
+  </div>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="main-content" id="mainContent">
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <span class="hero-label">Vitrina Virtual</span>
+          <h1 class="hero-title">
+            VITRINA VIRTUAL
+            <span class="hero-title-accent">GARÍFUNA</span>
+          </h1>
+          <p class="hero-description">
+            Conoce, apoya y conecta con los emprendimientos
+            del pueblo Garífuna de Honduras.
+          </p>
+          <button class="btn btn-primary" id="heroCta">
+            Explorar Emprendedores <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="hero-image-decoration"></div>
+          <div class="hero-image-decoration-bottom"></div>
+          <img
+            src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=900&q=80"
+            alt="Cultura y emprendimientos Garífunas de Honduras"
+            class="hero-image"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section class="section categories fade-in" id="categorias">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Categorías</h2>
+          <p class="section-subtitle">Explora los emprendimientos por área de interés</p>
+        </div>
+        <div class="categories-grid" id="categoriesGrid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- EMPRENDEDORES DESTACADOS (Carrusel) -->
+    <section class="section carousel-section fade-in" id="destacados">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Emprendedores Destacados</h2>
+          <p class="section-subtitle">Conoce algunos de los talentosos emprendedores garífunas</p>
+        </div>
+        <div class="carousel-wrapper">
+          <div class="carousel-track" id="carouselTrack">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="carouselPrev" aria-label="Anterior">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="carousel-dots" id="carouselDots"></div>
+          <button class="carousel-btn" id="carouselNext" aria-label="Siguiente">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TODOS LOS EMPRENDEDORES -->
+    <section class="section entrepreneurs-section fade-in" id="emprendedores">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Emprendedores</h2>
+          <p class="section-subtitle">Descubre todos los emprendimientos de nuestra vitrina virtual</p>
+        </div>
+        <div class="filter-bar" id="filterBar">
+          <!-- Rendered by JS -->
+        </div>
+        <div class="entrepreneurs-grid" id="entrepreneursGrid">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTRO -->
+    <section class="section registration fade-in" id="registro">
+      <div class="container">
+        <h2 class="section-title">Registra tu emprendimiento</h2>
+        <p class="registration-text">
+          ¿Tienes un emprendimiento y quieres formar parte de nuestra vitrina virtual?
+        </p>
+        <button class="btn btn-primary" id="registerBtn">
+          <i class="fa-solid fa-pen-to-square"></i> Registrar mi emprendimiento
+        </button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <!-- Footer Blocks -->
+        <div class="footer-blocks">
+          <div class="footer-block fade-in">
+            <div class="footer-block-icon">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h4>Emprendedores Garífunas</h4>
+            <p>Visibilizamos el talento y la creatividad de nuestras comunidades.</p>
+          </div>
+          <div class="footer-block fade-in">
+            <div class="footer-block-icon">
+              <i class="fa-solid fa-store"></i>
+            </div>
+            <h4>Compra Local</h4>
+            <p>Al elegir productos garífunas, apoyas nuestra cultura y economía.</p>
+          </div>
+          <div class="footer-block fade-in">
+            <div class="footer-block-icon">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <h4>Cultura y Tradición</h4>
+            <p>Cada producto cuenta una historia, nuestra historia.</p>
+          </div>
+          <div class="footer-block fade-in">
+            <div class="footer-block-icon">
+              <i class="fa-solid fa-globe-americas"></i>
+            </div>
+            <h4>Desde Honduras para el Mundo</h4>
+            <p>Llevamos la esencia garífuna a todos los rincones.</p>
+          </div>
+        </div>
+
+        <!-- Footer Main -->
+        <div class="footer-main">
+          <div class="footer-brand">
+            <img src="assets/icons/logo.svg" alt="Logo GARINAGU">
+            <div>
+              <h3>Vitrina Virtual Garífuna</h3>
+              <p>Centro de la Cultura Garífuna de Honduras</p>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Enlaces rápidos</h4>
+            <ul>
+              <li><a href="#" data-scroll="#inicio">Inicio</a></li>
+              <li><a href="#" data-scroll="#categorias">Categorías</a></li>
+              <li><a href="#" data-scroll="#emprendedores">Emprendedores</a></li>
+              <li><a href="#" data-scroll="#registro">Registro</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Institucional</h4>
+            <ul>
+              <li><a href="#" data-placeholder="¿Quiénes Somos? estará disponible próximamente.">¿Quiénes Somos?</a></li>
+              <li><a href="#" data-placeholder="Biblioteca estará disponible próximamente.">Biblioteca</a></li>
+              <li><a href="#" data-placeholder="Galería estará disponible próximamente.">Galería</a></li>
+              <li><a href="#" data-placeholder="Blog estará disponible próximamente.">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contacto</h4>
+            <ul>
+              <li><a href="mailto:info@garinagu.hn">info@garinagu.hn</a></li>
+              <li><a href="tel:+50422220000">+504 2222-0000</a></li>
+              <li>Tegucigalpa, Honduras</li>
+            </ul>
+            <div class="footer-social">
+              <a href="#" class="social-link" data-placeholder="Facebook estará disponible próximamente." aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link" data-placeholder="Instagram estará disponible próximamente." aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link" data-placeholder="YouTube estará disponible próximamente." aria-label="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Vitrina Virtual Garífuna — Centro de la Cultura Garífuna de Honduras. Todos los derechos reservados. Demo / Prototipo visual.</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Floating CTA -->
+  <button class="floating-cta" id="floatingCta" aria-label="Apoya lo nuestro">
+    <i class="fa-solid fa-store"></i>
+    <span>Apoya lo nuestro, impulsa lo nuestro</span>
+  </button>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" role="dialog" aria-labelledby="modalTitle">
+      <div class="modal-icon">
+        <i class="fa-solid fa-info-circle"></i>
+      </div>
+      <h3 id="modalTitle">Información</h3>
+      <p id="modalMessage"></p>
+      <button class="btn btn-primary" id="modalClose">Entendido</button>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">
+      <i class="fa-solid fa-times"></i>
+    </button>
+    <img src="" alt="Imagen ampliada" id="lightboxImg">
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
